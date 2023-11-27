@@ -1,4 +1,9 @@
-import { INodeType, INodeTypeDescription, IWebhookFunctions, IWebhookResponseData } from "n8n-workflow";
+import {
+  INodeType,
+  INodeTypeDescription,
+  IWebhookFunctions,
+  IWebhookResponseData,
+} from "n8n-workflow";
 
 import { apiRequest, getSurveys } from "./GenericFunctions";
 import { IHookFunctions } from "n8n-core";
@@ -115,6 +120,7 @@ export class Formbricks implements INodeType {
           url: webhookUrl,
           triggers: events,
           surveyIds: surveyIds,
+          source: "n8n",
         };
         const endpoint = "/webhooks";
 
