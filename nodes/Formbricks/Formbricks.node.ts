@@ -5,8 +5,8 @@ import {
   IWebhookResponseData,
 } from "n8n-workflow";
 
-import { apiRequest, getSurveys } from "./GenericFunctions";
-import { IHookFunctions } from "n8n-core";
+import {apiRequest, getSurveys} from "./GenericFunctions";
+import {IHookFunctions} from "n8n-core";
 
 export class Formbricks implements INodeType {
   description: INodeTypeDescription = {
@@ -155,7 +155,7 @@ export class Formbricks implements INodeType {
     const bodyData = this.getBodyData();
     // getting bodyData as string, so need to JSON parse it to convert to an object
     return {
-      workflowData: [this.helpers.returnJsonArray(JSON.parse(bodyData as any))],
+      workflowData: [this.helpers.returnJsonArray(bodyData)],
     };
   }
 }
