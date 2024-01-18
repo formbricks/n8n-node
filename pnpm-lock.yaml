@@ -21,10 +21,10 @@ devDependencies:
     specifier: ^4.0.2
     version: 4.0.2
   n8n-core:
-    specifier: legacy
+    specifier: '*'
     version: 0.175.1
   n8n-workflow:
-    specifier: legacy
+    specifier: '*'
     version: 0.156.1
   rimraf:
     specifier: ^5.0.5
