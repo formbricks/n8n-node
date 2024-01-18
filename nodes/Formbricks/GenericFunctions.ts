@@ -40,7 +40,11 @@ export async function apiRequest(
 
   options = Object.assign({}, options, option);
   try {
-    return await this.helpers.httpRequestWithAuthentication.call(this, "formbricksApi", options);
+    return await this.helpers.httpRequestWithAuthentication.call(
+      this,
+      "formbricksApi",
+      options
+    );
   } catch (error) {
     throw new NodeApiError(this.getNode(), error as JsonObject);
   }

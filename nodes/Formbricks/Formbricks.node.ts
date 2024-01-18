@@ -5,8 +5,8 @@ import {
   IWebhookResponseData,
 } from "n8n-workflow";
 
-import {apiRequest, getSurveys} from "./GenericFunctions";
-import {IHookFunctions} from "n8n-core";
+import { apiRequest, getSurveys } from "./GenericFunctions";
+import { IHookFunctions } from "n8n-core";
 
 export class Formbricks implements INodeType {
   description: INodeTypeDescription = {
