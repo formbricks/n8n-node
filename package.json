@@ -52,6 +52,6 @@
     "n8n-core": "legacy",
     "n8n-workflow": "legacy",
     "rimraf": "^5.0.5",
-    "typescript": "^5.3.3"
+    "typescript": "^4.8.4"
   }
 }
